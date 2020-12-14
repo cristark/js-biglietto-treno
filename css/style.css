@@ -41,20 +41,19 @@ main {
 .overlay .data_box {
   width: 50%;
   margin: 50px auto 0;
-  padding: 20px;
+  padding: 20px 0;
   background-color: rgba(255, 255, 255, 0.7);
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
 }
 
-.data_box .row,
-.price_box .row {
+.data_box .row {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   width: 50%;
-  padding: 0 20px;
+  padding: 0 30px;
   margin: 20px 0;
 }
 
@@ -87,6 +86,19 @@ main {
   color: #a6160a;
 }
 
+.price_box .price_row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price_box .row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 30px;
+  margin: 20px 0;
+}
+
 .price_box .row .text {
   height: 40px;
   line-height: 40px;
@@ -94,6 +106,15 @@ main {
   background-color: #fff;
   border: 1px solid black;
   border-radius: 5px;
+}
+
+.price_box .row a {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 50px;
+  background-color: #a6160a;
+  color: white;
+  text-decoration: none;
 }
 
 footer {
