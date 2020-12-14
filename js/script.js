@@ -30,11 +30,11 @@ var coupon2 = 'EPT6YF';
 
 
 if (age < 18) {
-    document.getElementById('price').innerHTML = discount1;
+    document.getElementById('price').innerHTML = discount1.toFixed(2);
     document.getElementById('coupon').innerHTML = coupon1;
 } else if (age > 65) {
-    document.getElementById('price').innerHTML = discount2;
+    document.getElementById('price').innerHTML = discount2.toFixed(2);
     document.getElementById('coupon').innerHTML = coupon2;
 } else {
-    document.getElementById('price').innerHTML = basePrice;
+    document.getElementById('price').innerHTML = basePrice.toFixed(2);
 }
