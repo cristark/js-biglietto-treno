@@ -21,14 +21,15 @@ basePrice = km * rate;
 
 console.log(basePrice.toFixed(2) + '€');
 
+
 var discount1 = basePrice - (basePrice * 20 / 100);
 var discount2 = basePrice - (basePrice * 40 / 100);
 
 
 if (age < 18) {
-    console.log(discount1.toFixed(2) + '€');
+    document.getElementById('price').innerHTML = discount1;
 } else if (age > 65) {
-    console.log(discount2.toFixed(2) + '€');
+    document.getElementById('price').innerHTML = discount2;
 } else {
-    console.log(basePrice.toFixed(2) + '€');
+    document.getElementById('price').innerHTML = basePrice;
 }
